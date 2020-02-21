@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Erik Stansell\\Desktop\\The-Watson-Test-master\\The-Watson-Test-master\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\Boring Tic-Tac-Toe.csproj": {}
+    "C:\\Users\\vnd-esta\\Desktop\\TheWatsonTestRepo\\The-Watson-Test\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\Boring Tic-Tac-Toe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Erik Stansell\\Desktop\\The-Watson-Test-master\\The-Watson-Test-master\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\Boring Tic-Tac-Toe.csproj": {
+    "C:\\Users\\vnd-esta\\Desktop\\TheWatsonTestRepo\\The-Watson-Test\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\Boring Tic-Tac-Toe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erik Stansell\\Desktop\\The-Watson-Test-master\\The-Watson-Test-master\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\Boring Tic-Tac-Toe.csproj",
+        "projectUniqueName": "C:\\Users\\vnd-esta\\Desktop\\TheWatsonTestRepo\\The-Watson-Test\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\Boring Tic-Tac-Toe.csproj",
         "projectName": "Boring Tic-Tac-Toe",
-        "projectPath": "C:\\Users\\Erik Stansell\\Desktop\\The-Watson-Test-master\\The-Watson-Test-master\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\Boring Tic-Tac-Toe.csproj",
-        "packagesPath": "C:\\Users\\Erik Stansell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erik Stansell\\Desktop\\The-Watson-Test-master\\The-Watson-Test-master\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\obj\\",
+        "projectPath": "C:\\Users\\vnd-esta\\Desktop\\TheWatsonTestRepo\\The-Watson-Test\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\Boring Tic-Tac-Toe.csproj",
+        "packagesPath": "C:\\Users\\vnd-esta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vnd-esta\\Desktop\\TheWatsonTestRepo\\The-Watson-Test\\TheWatsonTestRepo\\Tic-Tac-Toe\\Boring Tic-Tac-Toe\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Erik Stansell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vnd-esta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,12 +47,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
