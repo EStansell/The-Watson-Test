@@ -1,0 +1,11 @@
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\bin\Debug\netcoreapp3.0\UniqueEmailAddresses.exe
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\bin\Debug\netcoreapp3.0\UniqueEmailAddresses.deps.json
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\bin\Debug\netcoreapp3.0\UniqueEmailAddresses.runtimeconfig.json
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\bin\Debug\netcoreapp3.0\UniqueEmailAddresses.runtimeconfig.dev.json
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\bin\Debug\netcoreapp3.0\UniqueEmailAddresses.dll
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\bin\Debug\netcoreapp3.0\UniqueEmailAddresses.pdb
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\obj\Debug\netcoreapp3.0\UniqueEmailAddresses.csprojAssemblyReference.cache
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\obj\Debug\netcoreapp3.0\UniqueEmailAddresses.AssemblyInfoInputs.cache
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\obj\Debug\netcoreapp3.0\UniqueEmailAddresses.AssemblyInfo.cs
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\obj\Debug\netcoreapp3.0\UniqueEmailAddresses.dll
+C:\Users\Erik Stansell\source\repos\TheWatsonTest\UniqueEmailAddresses\obj\Debug\netcoreapp3.0\UniqueEmailAddresses.pdb

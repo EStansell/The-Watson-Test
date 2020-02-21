@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tic-Tac-Toe", "Tic-Tac-Toe\Tic-Tac-Toe.csproj", "{76961ECF-6821-465B-ADBD-DC0254B68D06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boring Tic-Tac-Toe", "Boring Tic-Tac-Toe\Boring Tic-Tac-Toe.csproj", "{EB3A6620-6F13-4CAF-8BBA-D81D802B976E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniqueEmailAddresses", "..\..\..\..\..\source\repos\TheWatsonTest\UniqueEmailAddresses\UniqueEmailAddresses.csproj", "{424B5462-69A4-47D4-A9E9-7D9FA5139474}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{76961ECF-6821-465B-ADBD-DC0254B68D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76961ECF-6821-465B-ADBD-DC0254B68D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76961ECF-6821-465B-ADBD-DC0254B68D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3A6620-6F13-4CAF-8BBA-D81D802B976E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3A6620-6F13-4CAF-8BBA-D81D802B976E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3A6620-6F13-4CAF-8BBA-D81D802B976E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3A6620-6F13-4CAF-8BBA-D81D802B976E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{424B5462-69A4-47D4-A9E9-7D9FA5139474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424B5462-69A4-47D4-A9E9-7D9FA5139474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424B5462-69A4-47D4-A9E9-7D9FA5139474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424B5462-69A4-47D4-A9E9-7D9FA5139474}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
