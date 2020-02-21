@@ -13,6 +13,7 @@ namespace Boring_Tic_Tac_Toe
 		/// <param name="n">nxn dimension for the game board</param>
 		public TicTacToe(int n)
 		{
+			board = new List<List<string>>();
 			for (int i = 0; i < n; i++)
 			{
 				board.Add(new List<string>());
@@ -29,12 +30,13 @@ namespace Boring_Tic_Tac_Toe
 		/// <param name="row">row to place a piece</param>
 		/// <param name="col">column to place a piece</param>
 		/// <param name="player">the player (1 or 2) the piece is for</param>
-		/// <returns>0 = no winner, 1 = player 1 won, 2 = player 2 won</returns>
+		/// <returns>-1 = Cant be won, 0 = no winner, 1 = player 1 won, 2 = player 2 won</returns>
 		public int PlacePiece(int row, int col, int player)
 		{
 			int result = 0;
-
-			if (board[row][col] == " ")
+			if(row >= board.Count || row < 0 || col >= board.Count || col < 0)
+				Console.WriteLine("Coordinates given do not fall on the current board.");
+			else if (board[row][col] == " ")
 				switch (player)
 				{
 					case 1:
@@ -48,7 +50,7 @@ namespace Boring_Tic_Tac_Toe
 						break;
 				}
 			else
-				Console.WriteLine("Spot has already been taken");
+				Console.WriteLine("Spot has already been taken.\nMake sure to choose an available space next time");
 
 			//Going across the top
 			for (int i = 0; i <= board.Count-1; i++)
@@ -69,6 +71,18 @@ namespace Boring_Tic_Tac_Toe
 				if (result != 0)
 					break;
 			}
+
+			bool full = false;
+			foreach(List<string> line in board)
+			{
+				full = !line.Contains(" ");
+				if (!full)
+				{
+					break;
+				}
+			}
+			if (full)
+				return -1;
 
 			return result;
 		}
@@ -120,9 +134,9 @@ namespace Boring_Tic_Tac_Toe
 			string RLStartPiece = board[0][0];
 			string RLPrevPiece;
 
-			for (int i = 0; i < board.Count; i++)
+			for (int i = 1; i <= board.Count; i++)
 			{
-				RLPrevPiece = board[i][board.Count-i];
+				RLPrevPiece = board[i-1][board.Count-i];
 				if (RLStartPiece == " " || RLPrevPiece != RLStartPiece)
 				{
 					result = 0;
