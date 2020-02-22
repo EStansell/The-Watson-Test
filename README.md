@@ -1,6 +1,9 @@
 # The-Watson-Test
 This repository is for the eyes of those who will review my work. Included is a library that picks out unique emails, a console application that lets you play Tic-Tac-Toe, a few sql queries bundled into one .sql file that demonstrate my sql capabilities, and another .sql file that is my creation of a database to track activity at a campsite.
 
+My own words include that there were aspects of sql I had to learn along the way. This is why It will be reviewed incompletely.
+The included WPF Tic-Tac-Toe was an attempt to make something more. but seeing the time restraint made me fall back to a console app which still took longer than expected to validate user input. Ultimately dissapointed it wasn't finished, but I accomplished more than I thought I would in the sql assignments as I am still learning things. Keep watching and it will be completed by monday.
+
 Time spent:
 Wednesday: 8-9 PM
 Notes: Finished Unique Email Address
