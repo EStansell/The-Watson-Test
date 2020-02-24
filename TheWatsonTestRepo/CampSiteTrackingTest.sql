@@ -2,61 +2,76 @@ create database MilcreekCapsite
 use MilcreekCapsite
 
 create table Campsite (
-	ID int NOT NULL Identity(1,1),
-	Location varchar(1000)not null,
-	Name varchar(100) not null,
-	Reserved int,
-	Primary Key (ID),
-	Unique(Reserved)
-)
-
-create table Customer (
-	ID int not null Identity(1,1),
-	Name varchar (60) not null,
-	PhoneNum varchar (20),
-	LastVisit DateTime not null,
-	primary key (ID),
+	ID int not null primary key Identity(1,1),
+	Name varchar(60) not null,
 )
 
 create table Reservation (
-	ID int not null Identity(1,1),
-	primary key (ID),
-	CampID int not null,
-	CustID int not null,
-	ReserveTime timestamp default current_timestamp
-	foreign key (CampID) references Campsite (Reserved) On Delete set null
-	unique(CustID)
+	ID int not null primary key Identity(1,1),
+	Campsite int not null foreign key (Campsite) 
+	references Campsite (ID),
+	HoldDate dateTime
 )
 
-insert into Campsite (Location, Name)
-values	('By the fallen oak', 'Oak Place'),
-		('Large open Plains where Jain is buried', 'Plain Jain')
+insert into Campsite (Name)
+values	('Creak C1'),
+		('Creak C2'),
+		('Clearing W1'),
+		('Clearing W2'),
+		('Tree Line TL1'),
+		('Tree Line TL2'),
+		('Burn Pit 1')
+select * from Campsite
 
-insert into Customer (name, LastVisit)
-values				('Mike', GetDate()),
-					('Tate', GetDate()),
-					('Joline', GetDate()),
-					('Jain', GetDate())
+insert into Reservation (Campsite, HoldDate)
+values	(1, GetDate()),
+		(5, GetDate()),
+		(5, DateAdd(day, 1, GetDate())),
+		(3, GetDate())
+select * from Reservation
 
-GO
-CREATE PROC AddReservation
-	@CustomerID INT,
+Go
+create Proc Add_Reservation
+	@Campsite int,
+	@HoldDate DateTime
+As
+	Begin
+		insert into Reservation (Campsite, HoldDate)
+		values (@Campsite, @HoldDate)
+	End
+	
+exec Add_Reservation @Campsite = 3, @HoldDate = '2020-02-24 19:45:19.620'
+
+Go
+create Proc Del_Reservation
 	@CampID int
-AS
-	BEGIN
-		insert into Reservation (CampID, CustID)
-		values (@CampID, @CustomerID)
-	END
-
-GO
-CREATE PROC DeleteReservation
-	@CampID INT
-AS
-	BEGIN
+As
+	Begin
 		delete from Reservation where ID = @CampID
-	END
+	End
 
-Create View AvailableCamps as
-select * from Campsite where reserved = null
+exec Del_Reservation @CampID = 6
 
--- Create a function that shows the most popular day to visit the canyon
+Go
+create View FreeCamps
+As
+	select C.ID, C.Name, DateAdd(day, 1, R.HoldDate) as NextAvailable from Campsite As C
+	Left Join Reservation As R on R.Campsite = C.ID
+	where R.HoldDate < GetDate()
+
+select * from FreeCamps
+
+Go
+Create Function BusiestDay()
+Returns DateTime   
+as   
+Begin  
+    Declare @ret DateTime;  
+
+    Select Top(1) @ret = HoldDate   
+    From Reservation
+	group by HoldDate
+	order by Count(HoldDate) desc
+
+    Return @ret;  
+End; 
